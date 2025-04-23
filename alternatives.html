@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Say No to Drugs - Alternatives</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Particle.js for effects -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+  <style>
+    /* Global Body Style */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0f0f0f;
+      color: #f1f1f1;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #121212;
+      padding: 10px 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+    }
+
+    .nav-link {
+      color: #ffffff;
+      font-size: 1.1rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      padding: 8px 15px;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #fbbf24;
+      text-decoration: underline;
+      transform: scale(1.05);
+    }
+
+    .navbar h1 {
+      color: #9B1C1C;
+      font-size: 2rem;
+      font-family: 'Merriweather', serif;
+      font-weight: 700;
+    }
+
+    /* Alternatives Section */
+    .alternatives-section {
+      background-color: #1a1a1a;
+      padding: 60px 0;
+      margin-top: 100px;
+      position: relative;
+    }
+
+    .alternative-card {
+      background-color: #222222;
+      border-radius: 8px;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      z-index: 2;
+    }
+
+    .alternative-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .alternative-card h3 {
+      font-size: 1.5rem;
+      color: #9B1C1C;
+      font-weight: 700;
+    }
+
+    .alternative-card p {
+      color: #ccc;
+    }
+
+    /* Animation */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 1s ease-out forwards;
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1a1a1a;
+      color: #bbb;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar fixed top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Say No to Drugs</h1>
+      <nav class="flex gap-8">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="roadmap.html" class="nav-link">Roadmap</a>
+        <a href="alternatives.html" class="nav-link">Alternatives</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Alternatives Section -->
+  <section id="alternatives" class="alternatives-section text-center">
+    <h2 class="text-4xl font-extrabold text-red-500 mb-8 fade-in-up">Healthy Alternatives to Drugs</h2>
+    <p class="text-lg text-gray-400 max-w-3xl mx-auto mb-16 fade-in-up" style="animation-delay: 0.3s;">
+      Discover the many ways you can live a fulfilling, drug-free life. Choose activities that will keep your mind sharp, your body strong, and your spirit uplifted.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <div class="alternative-card fade-in-up" style="animation-delay: 0.5s;">
+        <h3>🧘‍♂️ Meditation & Mindfulness</h3>
+        <p>Find inner peace and mental clarity by practicing meditation and mindfulness. These techniques will help you manage stress and enhance your emotional well-being.</p>
+      </div>
+      <div class="alternative-card fade-in-up" style="animation-delay: 0.7s;">
+        <h3>🏋️‍♀️ Physical Exercise</h3>
+        <p>Engage in regular physical activity to boost your energy, improve your mood, and increase your overall health. Whether it's running, yoga, or weightlifting, exercise is a powerful tool.</p>
+      </div>
+      <div class="alternative-card fade-in-up" style="animation-delay: 0.9s;">
+        <h3>🎨 Creative Hobbies</h3>
+        <p>Explore your creative side with hobbies like painting, writing, music, or photography. These activities provide a healthy outlet for self-expression and personal growth.</p>
+      </div>
+      <div class="alternative-card fade-in-up" style="animation-delay: 1.1s;">
+        <h3>💬 Support Groups</h3>
+        <p>Join support groups that can help you connect with others who understand your struggles. Sharing your story and hearing others' can provide strength and guidance.</p>
+      </div>
+      <div class="alternative-card fade-in-up" style="animation-delay: 1.3s;">
+        <h3>🎮 Video Games & Esports</h3>
+        <p>For entertainment and mental stimulation, dive into the world of video games and esports. These activities can improve focus, problem-solving skills, and teamwork.</p>
+      </div>
+      <div class="alternative-card fade-in-up" style="animation-delay: 1.5s;">
+        <h3>🌍 Volunteering & Community Service</h3>
+        <p>Help others by volunteering your time and skills. Community service is a fulfilling way to stay engaged, build connections, and make a positive impact.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Say No to Drugs • Empowering Minds • Crafted by Hari 🔥</p>
+  </footer>
+
+  <!-- Smooth Scroll Anchors -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
+
